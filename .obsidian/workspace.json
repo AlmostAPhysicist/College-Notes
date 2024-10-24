@@ -1,0 +1,267 @@
+{
+  "main": {
+    "id": "e4a415a5d16b43ca",
+    "type": "split",
+    "children": [
+      {
+        "id": "bd327fb7e5ee39cc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "29f3a7ec33fd308b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maths/Calc 2/Series.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Series"
+            }
+          },
+          {
+            "id": "901b42b8a2204612",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maths/Calc 2/Convergence Tests.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Convergence Tests"
+            }
+          },
+          {
+            "id": "7c09bd709ee74e9a",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Maths/Calc 2/attachments/Drawing 24-10-23-05-59-24.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 24-10-23-05-59-24"
+            }
+          },
+          {
+            "id": "44d26dbc7f0db1ef",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Maths/Calc 2/attachments/Drawing 24-10-23-05-49-08.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 24-10-23-05-49-08"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4435b4e09379fcd0",
+    "type": "split",
+    "children": [
+      {
+        "id": "fe4011df52749863",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d571b193cd66aa9d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "1ee47aa1d0bc46c5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "50469a2abfb12d71",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "53b696086f36b957",
+    "type": "split",
+    "children": [
+      {
+        "id": "bc29ceec1ce3e4d0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "865c6bf21586fd38",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "ac2fdbdeaddded20",
+            "type": "leaf",
+            "state": {
+              "type": "gemini-chat-view",
+              "state": {},
+              "icon": "message-circle",
+              "title": "Gemini Chat"
+            }
+          },
+          {
+            "id": "4fb037c988c0d802",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Academic Adivising.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Academic Adivising"
+            }
+          },
+          {
+            "id": "ea7317d71dc1cbb7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Academic Adivising.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Academic Adivising"
+            }
+          },
+          {
+            "id": "3a75d28443a410fd",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Academic Adivising.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Academic Adivising"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 609.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "templates:Insert template": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "audio-recorder:Start/stop recording": false,
+      "gemini-assistant:New Gemini chat": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "901b42b8a2204612",
+  "lastOpenFiles": [
+    "Maths/Calc 2/attachments/Drawing 24-10-23-05-49-08.md",
+    "Maths/Calc 2/attachments/Drawing 24-10-23-05-59-24.md",
+    "Maths/Calc 2/Convergence Tests.md",
+    "Maths/Calc 2/Series.md",
+    "Computer Science/Intro to CS/attachments/Drawing 24-10-22-11-07-25.md",
+    "Maths/Intro to Linear Algebra/Lec 13-14. Vector Space & Subspace & Span.md",
+    "Maths/Intro to Linear Algebra/Lec 4. Matrix-Vector Multiplication.md",
+    "Maths/Intro to Linear Algebra/Lec 5. Solution Sets of Linear Systems; Linear Independence.md",
+    "Maths/Intro to Linear Algebra/Lec 8. Matrix Operations & Inverse of a Matrix.md",
+    "Maths/Intro to Linear Algebra/Lec 10. (Review for Midterm 1).md",
+    "Computer Science/Intro to CS/attachments/Drawing 24-10-22-11-22-46.md",
+    "Physics/Honors Physics I/Lec 9. Center of Mass.md",
+    "Computer Science/Intro to CS/Recursion.md",
+    "Computer Science/Intro to CS/Programming Basics.md",
+    "Computer Science/Intro to CS/Data Structures in Java.md",
+    "STAR Cubesat - Payload Team.md",
+    "Physics/Honors Physics I/Lec 8. Momentum.md",
+    "Physics/Honors Physics I/attachments/Drawing 24-10-20-08-56-18.md",
+    "Physics/Honors Physics I/Lec 10. Rotational Motion.md",
+    "Maths/Calc 2/Sequences and Series.md",
+    "Computer Science/Intro to CS/Java Basics.md",
+    "Computer Science/Intro to CS/Code/inputOutput/BinaryOut.java",
+    "Computer Science/Intro to CS/Code/inputOutput/BinaryIn.java",
+    "Computer Science/Intro to CS/Code/Practice/myOwnFunction.class",
+    "Computer Science/Intro to CS/Code/Practice/Test.class",
+    "Computer Science/Intro to CS/Code/Practice/StudentsIO.class",
+    "Computer Science/Intro to CS/Code/Practice/StdOut.class",
+    "Computer Science/Intro to CS/Code/Practice/StdIn.class",
+    "Computer Science/Intro to CS/Code/Practice/Salary.class",
+    "Computer Science/Intro to CS/Code/Practice/RandomSeq.class",
+    "Computer Science/Intro to CS/Code/Practice/HelloWorld.class",
+    "Computer Science/README.md",
+    "Academic Adivising.md",
+    "Graduate School.md",
+    "Neural Center.md",
+    "Propulsion Lab.md",
+    "Maths/Calc 2/attachments/2024_10_16 6_46 pm Office Lens.jpg",
+    "Maths/Intro to Linear Algebra/attachments/2024_10_15 1_13 am Office Lens.jpg",
+    "Excalidraw/attachments/Pasted Image 20241003152436_355.png",
+    "attachments/Pasted image 20241011211237.png",
+    "attachments/Pasted image 20241011211122.png",
+    "attachments/Pasted image 20241011211054.png",
+    "attachments/Pasted image 20241011210949.png",
+    "attachments/Pasted image 20241011210900.png",
+    "attachments/Pasted image 20241011210823.png",
+    "attachments/Pasted image 20241011202039.png",
+    "Untitled.canvas"
+  ]
+}
