@@ -1,4 +1,0 @@
-- What did you learn about the Honors college?
-- Did I learn anything that could not have learned from a professor/administrator?
-- Do I have a good idea of how to succeed in the HC?
-- How did the student met find belonging in HC?
