@@ -1,0 +1,192 @@
+{
+  "main": {
+    "id": "e4a415a5d16b43ca",
+    "type": "split",
+    "children": [
+      {
+        "id": "672ad9c9388bc9b4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "809c62943b34f786",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Neural Center.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Neural Center"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4435b4e09379fcd0",
+    "type": "split",
+    "children": [
+      {
+        "id": "fe4011df52749863",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d571b193cd66aa9d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "1ee47aa1d0bc46c5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "53b696086f36b957",
+    "type": "split",
+    "children": [
+      {
+        "id": "bc29ceec1ce3e4d0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4fb037c988c0d802",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "ea7317d71dc1cbb7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "3a75d28443a410fd",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Scarlet Day of Service.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Scarlet Day of Service"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 330.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-custom-frames:Open Google Tasks": false,
+      "obsidian-custom-frames:Open Google Calendar": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "templates:Insert template": false,
+      "audio-recorder:Start/stop recording": false,
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "809c62943b34f786",
+  "lastOpenFiles": [
+    "Neural Center.md",
+    "Welcome.md",
+    "Scarlet Day of Service.md",
+    "Excalidraw.md",
+    "attachments/Drawing 25-01-01-02-00-14.md",
+    "attachments/Pasted image 20241125170925.png",
+    "attachments/Drawing 24-12-02-08-56-33.md",
+    "attachments/Drawing 24-12-02-08-50-28.md",
+    "attachments/Drawing 24-12-02-08-46-19.md",
+    "attachments/Drawing 24-12-02-08-43-22.md",
+    "STAR Cubesat - Payload Team.md",
+    "Maths/attachments/Drawing Pascal's Triangle -1th row.md",
+    "Maths/attachments/Drawing Pascal's Triangle Fuzzy Areas.md",
+    "Maths/attachments/Drawing Pascal's Triangle sides.md",
+    "Maths/attachments/Drawing Pascal's triangle unknown top.md",
+    "Maths/attachments/Drawing Pascal's triangle - what's up there.md",
+    "Maths/attachments/Drawing Pascal's Triangle.md",
+    "Physics/Honors Physics I/attachments/Drawing 24-09-09-01-18-01.md",
+    "Physics/Honors Physics I/attachments/Drawing 24-09-09-12-54-12.md",
+    "Physics/Honors Physics I/attachments/Drawing 24-09-12-12-38-22.md",
+    "Physics/Honors Physics I/attachments/Drawing 24-09-09-01-12-40.md",
+    "Physics/Honors Physics I/attachments/Drawing 24-09-09-01-00-12.md",
+    "Google Calander.md",
+    "Computer Science/Intro to CS/Lec 1. Welcome to Into to CS.md",
+    "Computer Science/Intro to CS/Intro to CS - Index.md",
+    "Maths/Intro to Linear Algebra/Lec 26. Diagonalization of Symmetric Matrices.md",
+    "Maths/Intro to Linear Algebra/attachments/IntroLinAlgSummary.pdf",
+    "Untitled.canvas",
+    "Lab Report.md",
+    "Maths/Intro to Linear Algebra/attachments/2024_12_04 12_30 am Office Lens.pdf",
+    "Maths/Intro to Linear Algebra/attachments/~syncthing~IntroLinAlgSummary.pdf.tmp",
+    "~syncthing~New file.md.tmp",
+    "Maths/Intro to Linear Algebra/attachments/orthogonal Complement .jpg",
+    "SAS/RU-Fit/~$FIT Assignment 3 - Aryan Malhotra.docx",
+    "Desmos-Cache/desmos-graph-651f773712983676da633451f41738c3adc89962810b2f33ccd32bcf7f0ac0f3.svg",
+    "Desmos-Cache/desmos-graph-9e746101717610ca22e5626b93b4c954b2b6c1e6e3e466209a2473a9997c6e97.svg",
+    "Desmos-Cache/desmos-graph-49b80bfafc61cccadd548dae94f375cd7f9d06940e5b64e6e0d7a27ef6660dcd.svg",
+    "Desmos-Cache/desmos-graph-eb31fe9f43be6457e9ddc1486999dbce32ac2596093caeaf2de7644d0ec3afd5.svg",
+    "Desmos-Cache/desmos-graph-bbf5b48aecade3cc7cf35fa53965e5f676f495a9925166b087053a90745b8287.svg",
+    "Desmos-Cache/desmos-graph-aa31fdc9206b45a9a839429706bf4414fd8706a00c813c79c2f4ee3425b07dc7.svg",
+    "Desmos-Cache/desmos-graph-76573f6458593dbf16cd7f69538e53888c39b4d9353895289032f7128a66421d.svg",
+    "Desmos-Cache/desmos-graph-34e3961437c2300c35a680692cb41157a7a82468e2b43854dda39a3532bc4750.svg",
+    "Maths/Intro to Linear Algebra/MatLab Assignments/Math250_Matlab_assignment_Lab5.pdf",
+    "Maths/Intro to Linear Algebra/MatLab Assignments/Math250_Matlab_assignment_Lab6.pdf",
+    "Maths/Intro to Linear Algebra/MatLab Assignments/Math250_Matlab_assignment_Lab4.pdf",
+    "Maths/Intro to Linear Algebra/MatLab Assignments/Math250_Matlab_assignment_Lab1.pdf",
+    "Maths/Intro to Linear Algebra/Homework/Intro Lin Alg HW 8.pdf"
+  ]
+}
