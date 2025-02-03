@@ -14,12 +14,12 @@
   "addMatrixBlock_parameter": "pmatrix",
   "autoFraction_toggle": true,
   "autoLargeBracket_toggle": false,
-  "autoSumLimit_toggle": true,
+  "autoSumLimit_toggle": false,
   "autoEncloseSup_toggle": true,
   "autoEncloseSub_toggle": true,
   "encloseSelection_toggle": true,
   "autoGreekCommandMathMode_toggle": true,
   "customShorthand_toggle": true,
-  "useTabtoComplete_toggle": false,
-  "customShorthand_parameter": "bi:::\\binom{#cursor}{#tab};\nsqrt:::\\sqrt{};\nbb:::\\mathbb{};\nbf:::\\mathbf{};\nte:::\\text{};\ninf:::\\infty;\ncd:::\\cdot;\nqu:::\\quad;\nti:::\\times;\nal:::\\alpha;\nbe:::\\beta;\nga:::\\gamma;\nGa:::\\Gamma;\ndel:::\\delta;\nDel:::\\Delta;\neps:::\\epsilon;\nze:::\\zeta;\net:::\\eta;\nth:::\\theta;\nTh:::\\Theta;\nio:::\\iota;\nka:::\\kappa;\nla:::\\lambda;\nLa:::\\Lambda;\nmu:::\\mu;\nnu:::\\nu;\nxi:::\\xi;\nXi:::\\Xi;\npi:::\\pi;\nPi:::\\Pi;\nrh:::\\rho;\nsig:::\\sigma;\nSig:::\\Sigma;\nta:::\\tau;\nup:::\\upsilon;\nUp:::\\Upsilon;\nph:::\\phi;\nPh:::\\Phi;\nch:::\\chi;\nps:::\\psi;\nPs:::\\Psi;\nom:::\\omega;\nOm:::\\Omega;\nsum:::\\sum_{#cursor}^{#tab};\nlim:::\\lim_{#cursor};\nto:::\\to;\nint:::\\int_{#cursor}^{#tab};"
+  "useTabtoComplete_toggle": true,
+  "customShorthand_parameter": "bi:::\\binom{#cursor}{#tab};\nsqrt:::\\sqrt{};\nbb:::\\mathbb{};\nbf:::\\mathbf{};\nte:::\\text{};\ninf:::\\infty;\ncd:::\\cdot;\nqu:::\\quad;\nti:::\\times;\nal:::\\alpha;\nbe:::\\beta;\nga:::\\gamma;\nGa:::\\Gamma;\ndel:::\\delta;\nDel:::\\Delta;\neps:::\\epsilon;\nze:::\\zeta;\net:::\\eta;\nth:::\\theta;\nTh:::\\Theta;\nio:::\\iota;\nka:::\\kappa;\nla:::\\lambda;\nLa:::\\Lambda;\nmu:::\\mu;\nnu:::\\nu;\nxi:::\\xi;\nXi:::\\Xi;\npi:::\\pi;\nPi:::\\Pi;\nrh:::\\rho;\nsig:::\\sigma;\nSig:::\\Sigma;\nta:::\\tau;\nup:::\\upsilon;\nUp:::\\Upsilon;\nph:::\\phi;\nPh:::\\Phi;\nch:::\\chi;\nps:::\\psi;\nPs:::\\Psi;\nom:::\\omega;\nOm:::\\Omega;\nsum:::\\sum_{#cursor}^{#tab};\nlim:::\\lim_{#cursor};\nto:::\\to;\nint:::\\int;\nintf:::\\int_{#cursor}^{#tab};\nnthrt:::\\sqrt[#cursor]{#tab};"
 }

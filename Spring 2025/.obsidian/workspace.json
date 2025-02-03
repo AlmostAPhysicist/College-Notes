@@ -4,24 +4,63 @@
     "type": "split",
     "children": [
       {
-        "id": "672ad9c9388bc9b4",
+        "id": "dbe8c3b7d36d81d4",
         "type": "tabs",
         "children": [
           {
-            "id": "809c62943b34f786",
+            "id": "783730f4a3609d13",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.4"
+            }
+          },
+          {
+            "id": "6e60d9b47ebff4f9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Neural Center.md",
+                "file": "Maths/Multivariable Calc/Index - Multivariable Calculus.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Neural Center"
+              "title": "Index - Multivariable Calculus"
+            }
+          },
+          {
+            "id": "7c8967d38581d0a4",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Physics/Honors Physics II/attachments/Drawing 25-01-31-10-58-14.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 25-01-31-10-58-14"
+            }
+          },
+          {
+            "id": "8562aebe0fdf6fbd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Honors College/Honors College Forum/Index - Honors College Forum.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Index - Honors College Forum"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -40,7 +79,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -82,9 +122,14 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "Maths/Multivariable Calc/Index - Multivariable Calculus.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Index - Multivariable Calculus"
             }
           },
           {
@@ -93,6 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Maths/Multivariable Calc/Index - Multivariable Calculus.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +148,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Index - Multivariable Calculus"
             }
           },
           {
@@ -111,82 +157,80 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Scarlet Day of Service.md",
+                "file": "Maths/Multivariable Calc/Index - Multivariable Calculus.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Scarlet Day of Service"
+              "title": "Outgoing links from Index - Multivariable Calculus"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 330.5,
-    "collapsed": true
+    "width": 330.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-custom-frames:Open Google Tasks": false,
       "obsidian-custom-frames:Open Google Calendar": false,
+      "obsidian-custom-frames:Open Google Tasks": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
-      "templates:Insert template": false,
-      "audio-recorder:Start/stop recording": false,
       "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "audio-recorder:Start/stop recording": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "companion:Toggle completion": false
     }
   },
-  "active": "809c62943b34f786",
+  "active": "4fb037c988c0d802",
   "lastOpenFiles": [
+    "Maths/Multivariable Calc/3. Cross products.md",
+    "Maths/Multivariable Calc/2. Operations on Vectors.md",
+    "Maths/Multivariable Calc/1. Overview and Vectors.md",
+    "Physics/Honors Physics II/1. Electrostatics.md",
+    "Physics/Honors Physics II/2. Electrostatic Forces and Fields.md",
+    "Physics/Honors Physics II/3. Experiencing the Electric Fields.md",
+    "Physics/Honors Physics II/4. Electric Flux and Gauss' Law.md",
+    "Physics/Honors Physics II/attachments/Drawing 25-01-31-10-58-14.md",
+    "Physics/Honors Physics II/attachments/Drawing 25-01-31-10-58-14.png",
     "Neural Center.md",
-    "Welcome.md",
-    "Scarlet Day of Service.md",
-    "Excalidraw.md",
-    "attachments/Drawing 25-01-01-02-00-14.md",
-    "attachments/Pasted image 20241125170925.png",
-    "attachments/Drawing 24-12-02-08-56-33.md",
-    "attachments/Drawing 24-12-02-08-50-28.md",
-    "attachments/Drawing 24-12-02-08-46-19.md",
-    "attachments/Drawing 24-12-02-08-43-22.md",
-    "STAR Cubesat - Payload Team.md",
-    "Maths/attachments/Drawing Pascal's Triangle -1th row.md",
-    "Maths/attachments/Drawing Pascal's Triangle Fuzzy Areas.md",
-    "Maths/attachments/Drawing Pascal's Triangle sides.md",
-    "Maths/attachments/Drawing Pascal's triangle unknown top.md",
-    "Maths/attachments/Drawing Pascal's triangle - what's up there.md",
-    "Maths/attachments/Drawing Pascal's Triangle.md",
-    "Physics/Honors Physics I/attachments/Drawing 24-09-09-01-18-01.md",
-    "Physics/Honors Physics I/attachments/Drawing 24-09-09-12-54-12.md",
-    "Physics/Honors Physics I/attachments/Drawing 24-09-12-12-38-22.md",
-    "Physics/Honors Physics I/attachments/Drawing 24-09-09-01-12-40.md",
-    "Physics/Honors Physics I/attachments/Drawing 24-09-09-01-00-12.md",
-    "Google Calander.md",
-    "Computer Science/Intro to CS/Lec 1. Welcome to Into to CS.md",
-    "Computer Science/Intro to CS/Intro to CS - Index.md",
-    "Maths/Intro to Linear Algebra/Lec 26. Diagonalization of Symmetric Matrices.md",
-    "Maths/Intro to Linear Algebra/attachments/IntroLinAlgSummary.pdf",
-    "Untitled.canvas",
-    "Lab Report.md",
-    "Maths/Intro to Linear Algebra/attachments/2024_12_04 12_30 am Office Lens.pdf",
-    "Maths/Intro to Linear Algebra/attachments/~syncthing~IntroLinAlgSummary.pdf.tmp",
-    "~syncthing~New file.md.tmp",
-    "Maths/Intro to Linear Algebra/attachments/orthogonal Complement .jpg",
-    "SAS/RU-Fit/~$FIT Assignment 3 - Aryan Malhotra.docx",
-    "Desmos-Cache/desmos-graph-651f773712983676da633451f41738c3adc89962810b2f33ccd32bcf7f0ac0f3.svg",
-    "Desmos-Cache/desmos-graph-9e746101717610ca22e5626b93b4c954b2b6c1e6e3e466209a2473a9997c6e97.svg",
-    "Desmos-Cache/desmos-graph-49b80bfafc61cccadd548dae94f375cd7f9d06940e5b64e6e0d7a27ef6660dcd.svg",
-    "Desmos-Cache/desmos-graph-eb31fe9f43be6457e9ddc1486999dbce32ac2596093caeaf2de7644d0ec3afd5.svg",
-    "Desmos-Cache/desmos-graph-bbf5b48aecade3cc7cf35fa53965e5f676f495a9925166b087053a90745b8287.svg",
-    "Desmos-Cache/desmos-graph-aa31fdc9206b45a9a839429706bf4414fd8706a00c813c79c2f4ee3425b07dc7.svg",
-    "Desmos-Cache/desmos-graph-76573f6458593dbf16cd7f69538e53888c39b4d9353895289032f7128a66421d.svg",
-    "Desmos-Cache/desmos-graph-34e3961437c2300c35a680692cb41157a7a82468e2b43854dda39a3532bc4750.svg",
-    "Maths/Intro to Linear Algebra/MatLab Assignments/Math250_Matlab_assignment_Lab5.pdf",
-    "Maths/Intro to Linear Algebra/MatLab Assignments/Math250_Matlab_assignment_Lab6.pdf",
-    "Maths/Intro to Linear Algebra/MatLab Assignments/Math250_Matlab_assignment_Lab4.pdf",
-    "Maths/Intro to Linear Algebra/MatLab Assignments/Math250_Matlab_assignment_Lab1.pdf",
-    "Maths/Intro to Linear Algebra/Homework/Intro Lin Alg HW 8.pdf"
+    "Honors College/Honors College Forum/Index - Honors College Forum.md",
+    "Physics/Honors Physics II/attachments/Drawing 25-01-31-01-08-25.md",
+    "Physics/Honors Physics II/attachments/Drawing 25-01-31-01-05-04.md",
+    "Physics/Honors Physics II/attachments/Drawing 25-01-31-01-08-25.png",
+    "Physics/Honors Physics II/attachments/Drawing 25-01-31-12-47-57.md",
+    "Physics/Honors Physics II/attachments/Drawing 25-01-31-12-42-20.md",
+    "Physics/Honors Physics II/attachments/Drawing 25-01-31-12-57-33.md",
+    "Physics/Honors Physics II/attachments/Drawing 25-01-31-01-05-04.png",
+    "Physics/Honors Physics II/attachments/Drawing 25-01-31-12-57-33.png",
+    "Physics/Honors Physics II/attachments/Drawing 25-01-31-12-47-57.png",
+    "Physics/Honors Physics II/attachments/Drawing 25-01-31-12-42-20.png",
+    "Physics/Honors Physics II/attachments/Drawing 25-01-31-12-30-24.md",
+    "Physics/Honors Physics II/attachments/Drawing 25-01-31-12-30-24.png",
+    "Physics/Honors Physics II/Index - Honors Physics II.md",
+    "Physics/Honors Physics II/Untitled.md",
+    "Physics/Computational Physics/Index - Computational Physics.md",
+    "Maths/Multivariable Calc/attachments/Drawing 25-01-29-05-02-40.md",
+    "Maths/Multivariable Calc/attachments/Drawing 25-01-29-05-02-40.png",
+    "Maths/Multivariable Calc/attachments/Drawing 25-01-29-04-42-52.md",
+    "Maths/Multivariable Calc/attachments/Drawing 25-01-29-04-42-52.png",
+    "Maths/Multivariable Calc/attachments/Drawing 25-01-29-03-54-58.md",
+    "Maths/Multivariable Calc/attachments/Drawing 25-01-29-03-54-58.png",
+    "Sediment Sampling Group Meeting.md",
+    "Schedule.pdf",
+    "Aryan Malhotra Resume.pdf",
+    "Physics/Honors Physics II/attachments/Drawing 25-01-28-12-59-44.md",
+    "Physics/Honors Physics II/attachments/Drawing 25-01-28-01-13-30.md",
+    "Physics/Honors Physics II/attachments/Drawing 25-01-28-01-07-39.md",
+    "Excalidraw",
+    "VID_20250108_005948188 (online-video-cutter.com).mp4",
+    "Maths/Multivariable Calc/attachments",
+    "SAS Core/Conservation",
+    "Physics/Honors Physics II/~syncthing~1. Electrostatics.md.tmp",
+    "Physics/Honors Physics II/attachments",
+    "Honors College/Honors College Forum/~syncthing~Index - Honors College Forum 1.md.tmp",
+    "SAS Core/College Writing",
+    "Untitled.canvas"
   ]
 }

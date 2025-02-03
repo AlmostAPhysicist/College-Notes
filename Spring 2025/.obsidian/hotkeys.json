@@ -59,15 +59,6 @@
       "key": "M"
     }
   ],
-  "editor:toggle-source": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "L"
-    }
-  ],
   "app:open-settings": [
     {
       "modifiers": [
@@ -138,15 +129,6 @@
       "key": "G"
     }
   ],
-  "app:toggle-left-sidebar": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "S"
-    }
-  ],
   "obsidian-minimal-settings:toggle-minimal-focus-mode": [
     {
       "modifiers": [],
@@ -198,6 +180,42 @@
         "Alt"
       ],
       "key": "P"
+    }
+  ],
+  "file-explorer:reveal-active-file": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "P"
+    }
+  ],
+  "app:toggle-left-sidebar": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "L"
+    }
+  ],
+  "app:toggle-right-sidebar": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "R"
+    }
+  ],
+  "companion:accept": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "A"
     }
   ]
 }

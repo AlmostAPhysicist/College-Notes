@@ -1,11 +1,14 @@
 [
-  "quick-latex",
   "settings-search",
   "obsidian-desmos",
   "cycle-through-panes",
   "obsidian-excalidraw-plugin",
   "obsidian-style-settings",
-  "obsidian-languagetool-plugin",
   "obsidian-custom-frames",
-  "codeblock-customizer"
+  "codeblock-customizer",
+  "companion",
+  "quick-latex",
+  "obsidian-reading-time",
+  "obsidian-languagetool-plugin",
+  "obsidian-completr"
 ]
