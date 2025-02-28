@@ -1,0 +1,779 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     36775,        771]
+NotebookOptionsPosition[     31812,        666]
+NotebookOutlinePosition[     33431,        717]
+CellTagsIndexPosition[     33388,        714]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Electrostatics", "Title",
+ CellChangeTimes->{{3.470317922892462*^9, 3.470317941063523*^9}, {
+   3.617813700260653*^9, 3.617813733123275*^9}, 3.6189184487491093`*^9, {
+   3.619537890356805*^9, 3.619537906094503*^9}, {3.620837238958066*^9, 
+   3.620837254974326*^9}, {3.622062269393405*^9, 3.622062278361981*^9}, 
+   3.622904706219993*^9, {3.623367194056882*^9, 3.6233671961475887`*^9}, {
+   3.6883504284867487`*^9, 3.688350434495894*^9}, {3.695587601156419*^9, 
+   3.69558761767094*^9}},ExpressionUUID->"3bb875da-d2e2-5541-b580-\
+ca3ce7adf6e5"],
+
+Cell["\<\
+PreLab submission with a pass grade is required to begin the lab.
+Must be submitted no later than a day before the lab.\
+\>", "Subtitle",
+ CellChangeTimes->{{3.470317947797596*^9, 3.470317963718758*^9}, {
+  3.617813739250799*^9, 3.617813743715366*^9}, {3.6190389887035418`*^9, 
+  3.619039014385497*^9}, {3.6190417370851107`*^9, 3.619041749497377*^9}, {
+  3.6197972391328497`*^9, 3.619797239779271*^9}, {3.620861398296776*^9, 
+  3.6208613988447113`*^9}, {3.622062281504806*^9, 3.622062282045733*^9}, {
+  3.622840025019311*^9, 3.622840030096158*^9}, {3.622877395946138*^9, 
+  3.6228773984390173`*^9}, {3.622918553000749*^9, 3.622918578678432*^9}, {
+  3.623367199793519*^9, 3.62336720183327*^9}, {3.686946759831705*^9, 
+  3.686946765010564*^9}},ExpressionUUID->"5e1e67df-94c2-3840-b753-\
+ea1e1b14b372"],
+
+Cell["\<\
+Name: Aryan Malhotra
+Section: H5
+Date: Feb 13th\
+\>", "Subsubtitle",
+ CellChangeTimes->{{3.4703183025473275`*^9, 3.470318315218635*^9}, {
+   3.617813750219903*^9, 3.617813788066779*^9}, {3.617814501431238*^9, 
+   3.6178145019899683`*^9}, {3.6178258320296288`*^9, 3.617825834094742*^9}, {
+   3.6180812205761147`*^9, 3.618081228295164*^9}, {3.619039032281863*^9, 
+   3.619039043865623*^9}, 3.619040459260029*^9, {3.686946742573304*^9, 
+   3.686946745184066*^9}, {3.9484120415831375`*^9, 3.9484120725387383`*^9}, {
+   3.948412113578657*^9, 3.9484121154771194`*^9}, {3.9484121702964916`*^9, 
+   3.9484121708402786`*^9}},ExpressionUUID->"9cfa3262-9cf4-a742-95c3-\
+559fdfd9f14a"],
+
+Cell[CellGroupData[{
+
+Cell["Readings", "Section",
+ CellChangeTimes->{{3.4703170890792065`*^9, 3.4703170995317297`*^9}, {
+   3.617830119877421*^9, 3.617830126003809*^9}, {3.618216442944919*^9, 
+   3.618216445042902*^9}, {3.6182166511665373`*^9, 3.6182166538005333`*^9}, {
+   3.6230204599477177`*^9, 3.62302046511125*^9}, {3.6860146323692303`*^9, 
+   3.68601463398013*^9}, 
+   3.687102948883436*^9},ExpressionUUID->"421776e9-23fe-de4e-9936-\
+b0c3f8ee0d27"],
+
+Cell[CellGroupData[{
+
+Cell["Electric Charges & Coulomb\[CloseCurlyQuote]s Law, A Short Review", \
+"Subsection",
+ CellChangeTimes->{{3.620933171535242*^9, 3.620933186893854*^9}, {
+   3.622109008181932*^9, 3.622109019623557*^9}, 3.622918158511251*^9, 
+   3.685928672428493*^9, {3.6871031806616993`*^9, 3.6871032143784847`*^9}, {
+   3.688589935276366*^9, 3.6885899851268597`*^9}, {3.688622311166428*^9, 
+   3.688622332700047*^9}},ExpressionUUID->"16b03faa-5bd0-a046-98af-\
+fea7393ba2b0"],
+
+Cell[TextData[{
+ "By observing the attractive and repulsive forces between certain objects, \
+we could conclude that there is not one, but two types of charge that can \
+explain all the interactions. If you charge two same objects the same way, \
+they repel, which means like charges repel.\n\nBy introducing the law of \
+conservation of charge later on, we started calling one charge positive and \
+the other negative. Namely we understood that charge exchanges between the \
+objects, when certain objects touch, like fur and a piece of acrylic. The \
+phenomena that you can charge certain materials by contact (like fur and \
+acrylic) is called triboelectric effect.\n\nCoulomb\[CloseCurlyQuote]s law \
+states that the interaction force between two point charges ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["Q", "1"], TraditionalForm]],ExpressionUUID->
+  "7c90908a-8640-2a4d-8bbc-69d2a2409b38"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["Q", "2"], TraditionalForm]],ExpressionUUID->
+  "f2140134-a539-2c4a-9c7d-a27a3b24f9c2"],
+ " is given by,\n(1)\t",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"F", "=", 
+    RowBox[{"k", 
+     FractionBox[
+      RowBox[{
+       SubscriptBox["Q", "1"], 
+       SubscriptBox["Q", "2"]}], 
+      SuperscriptBox["r", "2"]]}]}], TraditionalForm]],ExpressionUUID->
+  "69f9c1ed-c9e6-444e-a367-4287b8f2edf8"],
+ ",\nwhere ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"k", "=", 
+    RowBox[{"8.99", " ", "\[Cross]", " ", 
+     SuperscriptBox["10", "9"]}]}], TraditionalForm]],ExpressionUUID->
+  "0690af7a-10ce-9c4f-a652-2822e87e2557"],
+ " ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    RowBox[{
+     SuperscriptBox["Nm", "2"], "/", 
+     SuperscriptBox["C", "2"]}], "Text"], TraditionalForm]],ExpressionUUID->
+  "dde36be0-fea0-ec47-bf41-2d380ef454f1"],
+ " is a constant, the direction of the force ",
+ Cell[BoxData[
+  FormBox["F", TraditionalForm]],ExpressionUUID->
+  "7e8ca854-770d-474b-824b-bbc9b9cdfa31"],
+ " is along the line between the charges. Negative force means attractive \
+force and vice versa. Meaning that the like charges repel and opposites \
+attract. ",
+ Cell[BoxData[
+  FormBox["r", TraditionalForm]],ExpressionUUID->
+  "67b1d513-b7ed-a647-ba0d-bb0956aa83e8"],
+ " is the distance between the point charges. A point charge approximation is \
+valid if the size of the charge carrying object is much smaller than ",
+ Cell[BoxData[
+  FormBox["r", TraditionalForm]],ExpressionUUID->
+  "920146d6-fea9-4342-a8a9-2e690839f459"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.6871032346864*^9, 3.68710346079788*^9}, {
+  3.688589994488491*^9, 3.6885900046221533`*^9}, {3.688590357509252*^9, 
+  3.688590515261949*^9}, {3.688590563900305*^9, 3.688590934994223*^9}, {
+  3.688619030876094*^9, 3.6886191975428123`*^9}, {3.688619566430554*^9, 
+  3.688619808141573*^9}, {3.688620508450048*^9, 3.688620548521597*^9}, {
+  3.688622155828322*^9, 3.688622280179634*^9}, {3.6886747980573683`*^9, 
+  3.688675622583218*^9}, {3.688675655885881*^9, 3.6886757888807592`*^9}, {
+  3.688690505175565*^9, 3.688690596477508*^9}, {3.688789322997341*^9, 
+  3.6887893237885838`*^9}},ExpressionUUID->"381650f8-1292-2a40-bf9f-\
+b51c02abd083"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Capacitors, A Short Review", "Subsection",
+ CellChangeTimes->{{3.620933171535242*^9, 3.620933186893854*^9}, {
+   3.622109008181932*^9, 3.622109019623557*^9}, 3.622918158511251*^9, 
+   3.685928672428493*^9, {3.6871031806616993`*^9, 3.6871032143784847`*^9}, {
+   3.688589935276366*^9, 3.6885899851268597`*^9}, {3.688622311166428*^9, 
+   3.688622332700047*^9}, {3.6887940842408943`*^9, 
+   3.6887941070748863`*^9}},ExpressionUUID->"7ab4a446-a30b-944d-95dc-\
+18ee20de331e"],
+
+Cell[TextData[{
+ "A capacitor is a device made of usually two conductors. The point of making \
+a capacitor is to hold charge. The capacitance of a capacitor is defined by \
+the amount of charge it holds when 1V voltage is applied to it,\n(2)\t",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"C", "=", 
+    RowBox[{"Q", "/", 
+     RowBox[{"V", "."}]}]}], TraditionalForm]],ExpressionUUID->
+  "297902e9-8481-4945-a238-0f4e238872ba"],
+ "\nThe unit for the capacitance is Farad denoted by F. A large capacitor in \
+an electric circuit can be about \[Mu]F or ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["10", 
+    RowBox[{"-", "6"}]], TraditionalForm]],ExpressionUUID->
+  "9f0406f0-f692-2c4d-8fd2-4c69cc165269"],
+ "F.\nThe capacitance depends on capacitor\[CloseCurlyQuote]s geometrical \
+shape and the dielectric material used inside it.\n\n",
+ StyleBox["Discharging a conducting sphere:",
+  FontWeight->"Bold"],
+ " Intuitively speaking, capacitance shows how much room a single charge has \
+when sitting on the capacitor. Lower capacitance means less room which is \
+less comfortable. Remember that the like charges repel. A conducting sphere \
+can be thought of as a capacitor which has one conductor which is the sphere \
+itself and another conductor which is at infinity. In any case, the \
+capacitance of the spheres we will use in this lab are pretty small, about ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"R", "/", "k"}], "=", 
+    RowBox[{"2.8", " ", "pF"}]}], TraditionalForm]],ExpressionUUID->
+  "a2c4db1c-df65-ab48-8cf2-6f5fb708982b"],
+ " where ",
+ Cell[BoxData[
+  FormBox["R", TraditionalForm]],ExpressionUUID->
+  "6a0345ba-712e-1e4b-96fd-4708e5daea7a"],
+ " is the radius. This means that the charges are really packed on top of \
+them and are quite \[OpenCurlyDoubleQuote]unhappy\[CloseCurlyDoubleQuote] \
+(high potential energy).\nNow if you connect this sphere to a large 10\[Mu]F \
+capacitor, almost all the charges will leave the sphere and sit on the larger \
+capacitor. This would allow you to measure the initial charge on the sphere \
+(the final charge on the sphere is practically zero). You simply need to \
+measure the voltage and use,\n(2\[CloseCurlyQuote])\t",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"Q", "=", 
+    RowBox[{
+     RowBox[{"C", " ", "V"}], "=", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"10", "\[Mu]F"}], ")"}], " ", 
+      RowBox[{"V", "."}]}]}]}], TraditionalForm]],ExpressionUUID->
+  "5b9161bb-f10e-ab4f-9cb6-ee9b97078191"],
+ "\nRemember that (1F)\[Cross](1V) = 1 C. To measure the voltage one can use \
+a DC voltmeter."
+}], "Text",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQBWIQ/fdbaML0iteONh0za0D0joX+obnVrx3XvZgcBqJP
+e29oAtGPEzOmgWif8zVzQPTaC/dPgehvHHeaqoH0jriN00G05PGzR0H0kXaW
+JyD6dFqfdQ2QfrNhggOInttYxVkLpCfsZ5UE0d+uHtw7DUjvXHlJZTqQVo78
+owGi9fTnWIJoq3mqmfOA9H73/hIQbfEqfuU5IC1iUwmmd2WyMlwE0orP9qmB
+6EnWr7VB9P7Q07EgWu339hQQ/ePX9VwQvXKjNP+M9teOSxy1wDTfxlJhEB3V
+eFYERM+ZoyYJolOvSGmB6N07ElNB9IE13WC6bLFUPoheJltUCKK7p++qBNFb
+bmzrA9EAHIO19g==
+  "],ExpressionUUID->"b8264923-415e-1143-a91f-e8737bb87ec0"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Dialog:", "Section",
+ CellChangeTimes->{{3.617830106543085*^9, 3.617830112720476*^9}, {
+   3.617831171840748*^9, 3.617831174610969*^9}, 3.618103416896851*^9, 
+   3.618103471239194*^9, {3.6182182374600983`*^9, 3.618218246530492*^9}, 
+   3.61840031768646*^9, {3.6184845631915417`*^9, 3.618484566342008*^9}, 
+   3.61848504341685*^9, 3.6187298660031567`*^9, 3.618729948650751*^9, 
+   3.618730225203479*^9, 3.618730286528235*^9, 
+   3.618730317243479*^9},ExpressionUUID->"55296861-6963-3a40-ba34-\
+a1ab504cfa4a"],
+
+Cell["\<\
+Question 1.
+- If a sphere has a charge of  +2 C on it, what will be the electrostatic \
+force exerted on a second sphere with a charge of +1 C, at a distance of 20 \
+cm?  Is the force repulsive or attractive?\
+\>", "Subsubsection",
+ CellChangeTimes->{{3.620837780094871*^9, 3.620837800725563*^9}, {
+   3.62083811174247*^9, 3.620838116693406*^9}, {3.620841033794161*^9, 
+   3.6208410526062813`*^9}, {3.620843087922526*^9, 3.620843109993519*^9}, {
+   3.6209263916491957`*^9, 3.620926416105279*^9}, {3.622065740418627*^9, 
+   3.622065770445798*^9}, {3.622068810881812*^9, 3.622068834987339*^9}, 
+   3.6220699797343197`*^9, 3.6229155612911463`*^9, {3.623369965307362*^9, 
+   3.623370016849251*^9}, {3.623371160720181*^9, 3.6233711617644653`*^9}, {
+   3.688365820191039*^9, 3.6883658848355503`*^9}, {3.688719414862627*^9, 
+   3.688719443393402*^9}, {3.6945794456015797`*^9, 3.6945794616535378`*^9}, {
+   3.694979755054934*^9, 3.6949797586241293`*^9}},
+ Background->RGBColor[
+  0.87, 0.94, 1],ExpressionUUID->"45b43da9-05ca-9141-8c86-8604a46639c5"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Answer 1.\nFor a sphere, the force outside the sphere is the same as the \
+force that would be exerted considering the sphere as a point charge.\n\n\
+Hence, the force between the two spheres would simply be kq1q2/r^2 = ",
+ Cell[BoxData["4.4999999999999994`*^11"], "Output",
+  CellGroupingRules->{"GroupTogetherGrouping", 10000.},
+  CellChangeTimes->{3.9484123340632057`*^9},
+  FontWeight->"Bold",ExpressionUUID->"b0186272-98db-3d49-ba9c-7f80d85d2c7e"],
+ StyleBox[" N",
+  FontWeight->"Bold"],
+ " (calculation shown in the code below)\n\nThis is a very large force!"
+}], "Subsubsection",
+ CellChangeTimes->{{3.620837780094871*^9, 3.620837800725563*^9}, {
+   3.62083811174247*^9, 3.620838116693406*^9}, {3.620841033794161*^9, 
+   3.6208410526062813`*^9}, {3.620843087922526*^9, 3.620843109993519*^9}, {
+   3.6209263916491957`*^9, 3.620926416105279*^9}, {3.622065740418627*^9, 
+   3.622065770445798*^9}, {3.622068810881812*^9, 3.622068834987339*^9}, 
+   3.6220699797343197`*^9, 3.6229155612911463`*^9, {3.623369965307362*^9, 
+   3.623370016849251*^9}, {3.623371160720181*^9, 3.6233711617644653`*^9}, {
+   3.688365820191039*^9, 3.6883658848355503`*^9}, {3.688719414862627*^9, 
+   3.688719470100444*^9}, {3.9484122232567577`*^9, 3.9484123017877254`*^9}, {
+   3.948412339305252*^9, 3.9484123602061367`*^9}},
+ Background->RGBColor[
+  0.87, 0.94, 1],ExpressionUUID->"745418b9-20d7-4e4c-8790-ba3a60b5f388"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "This", " ", "is", " ", "an", " ", "Input", " ", "cell", " ", "in", " ", 
+    "case", " ", "you", " ", "need"}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"9", "*", 
+     RowBox[{"10", "^", "9"}], " ", "*", " ", "2", " ", "*", " ", "1"}], " ", 
+    ")"}], "/", 
+   RowBox[{"(", 
+    RowBox[{"0.2", "^", "2"}], ")"}]}]}]], "Input",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.},
+ CellChangeTimes->{{3.6887150710025053`*^9, 3.68871516367642*^9}, {
+   3.688788383186554*^9, 3.6887884411916113`*^9}, {3.688791382593507*^9, 
+   3.688791579664248*^9}, {3.688791612095237*^9, 3.688791647442322*^9}, {
+   3.688791869349415*^9, 3.688791872101664*^9}, {3.688792117806716*^9, 
+   3.688792174323256*^9}, {3.688792431802599*^9, 3.6887924321932163`*^9}, {
+   3.6887937122035418`*^9, 3.688793723212285*^9}, {3.688870157071949*^9, 
+   3.6888706164579067`*^9}, {3.68887130750359*^9, 3.688871375418387*^9}, 
+   3.6900654965105867`*^9, {3.690119253517949*^9, 3.690119254476774*^9}, {
+   3.6901517334767523`*^9, 3.6901519871197853`*^9}, {3.690152020014276*^9, 
+   3.6901520226190157`*^9}, {3.6901520804582253`*^9, 3.690152082943993*^9}, {
+   3.690152121600914*^9, 3.690152180106141*^9}, {3.6901693629964237`*^9, 
+   3.690169395217452*^9}, 3.69016943904252*^9, {3.690171126648179*^9, 
+   3.6901711541917877`*^9}, {3.6905479600003157`*^9, 3.6905479995404873`*^9}, 
+   3.694369113622551*^9, {3.9484123072500896`*^9, 3.9484123318436565`*^9}},
+ Background->GrayLevel[0.85],
+ CellLabel->"In[1]:=",ExpressionUUID->"cf276d57-1793-2945-a6c1-883489345b30"],
+
+Cell[BoxData["4.4999999999999994`*^11"], "Output",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.},
+ CellChangeTimes->{3.9484123340632057`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"46bc2f4c-bdc1-9243-a2e7-3f64d4665abe"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Question 2.\n- In the lab experiment, a charged metal sphere with charge ",
+ Cell[BoxData[
+  FormBox["Q", TraditionalForm]], "Subsection",ExpressionUUID->
+  "25eaa8f3-d7bd-964c-9dcf-772b6086dbd9"],
+ " is touched by a second metal sphere of the same radius but uncharged. What \
+are the final charges on each sphere? Explain."
+}], "Subsubsection",
+ CellGroupingRules->{"GroupTogetherGrouping", 10001.},
+ CellChangeTimes->{{3.620837780094871*^9, 3.620837800725563*^9}, {
+   3.62083811174247*^9, 3.620838116693406*^9}, {3.620841033794161*^9, 
+   3.6208410526062813`*^9}, {3.620843087922526*^9, 3.620843109993519*^9}, {
+   3.6209263916491957`*^9, 3.620926416105279*^9}, {3.622065740418627*^9, 
+   3.622065770445798*^9}, {3.622068810881812*^9, 3.622068834987339*^9}, 
+   3.6220699797343197`*^9, 3.6229155612911463`*^9, {3.623369965307362*^9, 
+   3.623370016849251*^9}, {3.6233701016458597`*^9, 3.62337011094805*^9}, {
+   3.6233711648538027`*^9, 3.62337116587525*^9}, {3.688366031349457*^9, 
+   3.688366134324223*^9}, {3.688691754164209*^9, 3.6886917564189262`*^9}, {
+   3.688719430974615*^9, 3.688719456075294*^9}, 3.694369904917817*^9, {
+   3.694579528628496*^9, 3.6945795970847178`*^9}, {3.694968808165081*^9, 
+   3.694968826412239*^9}, {3.694979760709062*^9, 3.694979760827978*^9}},
+ Background->RGBColor[
+  0.87, 0.94, 1],ExpressionUUID->"04ad4f04-60f7-8146-a303-64af57eea33d"],
+
+Cell[TextData[{
+ "Answer 2.\nWhen two metal spheres come in contact, one charged and the \
+other uncharged, the charge gets distributed on the surface of the two sphere\
+\[CloseCurlyQuote]s such that both the surfaces are at the same potential.\n\n\
+Since potential for a sphere at the surface is kQ/r,\n\n",
+ StyleBox["Q will distribute into the 2 spheres as q1 and q2 such that kq1/r1 \
+= kq2/r2 and q1+q2=Q \[Implies] q1/r1 = (Q-q1)/r2 \n",
+  FontWeight->"Bold"],
+ "\[Implies] ",
+ StyleBox["q1 = r1Q/(r1+r2) and q2 = Q-q1",
+  FontWeight->"Bold"],
+ "\nThe specific distribution would depend on the relative size of the \
+spheres. For instance, ",
+ StyleBox["if the spheres were of the same size",
+  FontVariations->{"Underline"->True}],
+ ", q1=q2, implying the charges would be distributed evenly into ",
+ StyleBox["Q/2, Q/2.",
+  FontVariations->{"Underline"->True}],
+ "\n"
+}], "Subsubsection",
+ CellGroupingRules->{"GroupTogetherGrouping", 10001.},
+ CellChangeTimes->{{3.620837780094871*^9, 3.620837800725563*^9}, {
+   3.62083811174247*^9, 3.620838116693406*^9}, {3.620841033794161*^9, 
+   3.6208410526062813`*^9}, {3.620843087922526*^9, 3.620843109993519*^9}, {
+   3.6209263916491957`*^9, 3.620926416105279*^9}, {3.622065740418627*^9, 
+   3.622065770445798*^9}, {3.622068810881812*^9, 3.622068834987339*^9}, 
+   3.6220699797343197`*^9, 3.6229155612911463`*^9, {3.623369965307362*^9, 
+   3.623370016849251*^9}, {3.6233701016458597`*^9, 3.62337011094805*^9}, {
+   3.6233711648538027`*^9, 3.62337116587525*^9}, {3.688366031349457*^9, 
+   3.688366134324223*^9}, {3.688691754164209*^9, 3.6886917564189262`*^9}, {
+   3.688719430974615*^9, 3.688719475485545*^9}, {3.694968808165382*^9, 
+   3.6949688290500517`*^9}, {3.94841242676128*^9, 3.9484127130812836`*^9}, {
+   3.9484127805308304`*^9, 3.9484128210856724`*^9}},
+ Background->RGBColor[
+  0.87, 0.94, 1],ExpressionUUID->"91bf8f64-7856-f746-ac24-23d9dd67b037"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "This", " ", "is", " ", "an", " ", "Input", " ", "cell", " ", "in", " ", 
+    "case", " ", "you", " ", "need"}], " ", "*)"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellGroupingRules->{"GroupTogetherGrouping", 10001.},
+ CellChangeTimes->{{3.6887150710025053`*^9, 3.68871516367642*^9}, {
+   3.688788383186554*^9, 3.6887884411916113`*^9}, {3.688791382593507*^9, 
+   3.688791579664248*^9}, {3.688791612095237*^9, 3.688791647442322*^9}, {
+   3.688791869349415*^9, 3.688791872101664*^9}, {3.688792117806716*^9, 
+   3.688792174323256*^9}, {3.688792431802599*^9, 3.6887924321932163`*^9}, {
+   3.6887937122035418`*^9, 3.688793723212285*^9}, {3.688870157071949*^9, 
+   3.6888706164579067`*^9}, {3.68887130750359*^9, 3.688871375418387*^9}, 
+   3.6900654965105867`*^9, {3.690119253517949*^9, 3.690119254476774*^9}, {
+   3.6901517334767523`*^9, 3.6901519871197853`*^9}, {3.690152020014276*^9, 
+   3.6901520226190157`*^9}, {3.6901520804582253`*^9, 3.690152082943993*^9}, {
+   3.690152121600914*^9, 3.690152180106141*^9}, {3.6901693629964237`*^9, 
+   3.690169395217452*^9}, 3.69016943904252*^9, {3.690171126648179*^9, 
+   3.6901711541917877`*^9}, {3.6905479600003157`*^9, 3.6905479995404873`*^9}, 
+   3.694369113622551*^9, 3.694968808165679*^9},
+ Background->GrayLevel[
+  0.85],ExpressionUUID->"0db50599-68e3-eb49-93e8-75208a683ae5"],
+
+Cell[TextData[{
+ "Question 3.\n- In the lab experiment, we have two charged spheres, sitting \
+at a distance ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"10", " ", "cm"}], TraditionalForm]],ExpressionUUID->
+  "274e06d9-7623-ee4f-a954-9c42588c5608"],
+ " apart from each other. We touch one of the spheres with a wire connected \
+to a capacitor and deplete its charge into the 10\[Mu]F capacitor. We read \
+the capacitor voltage to be ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["V", "1"], "=", 
+    RowBox[{"9.3", "mV"}]}], TraditionalForm]],ExpressionUUID->
+  "57b92dea-6e47-4744-9691-a5a1ad510c2a"],
+ ". Now we discharge the capacitor by connecting its plates together. Then we \
+do the same with the other sphere, and measure ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["V", "2"], "=", 
+    RowBox[{"8.1", "mV"}]}], TraditionalForm]],ExpressionUUID->
+  "da8f5127-ce91-1c49-bd83-6f3dddfd48e6"],
+ ". Using this data, estimate the initial electrostatic force between the \
+spheres before emptying their charges into the capacitor."
+}], "Subsubsection",
+ CellGroupingRules->{"GroupTogetherGrouping", 10001.},
+ CellChangeTimes->{{3.620837780094871*^9, 3.620837800725563*^9}, {
+   3.62083811174247*^9, 3.620838116693406*^9}, {3.620841033794161*^9, 
+   3.6208410526062813`*^9}, {3.620843087922526*^9, 3.620843109993519*^9}, {
+   3.6209263916491957`*^9, 3.620926416105279*^9}, {3.622065740418627*^9, 
+   3.622065770445798*^9}, {3.622068810881812*^9, 3.622068834987339*^9}, 
+   3.6220699797343197`*^9, 3.6229155612911463`*^9, {3.623369965307362*^9, 
+   3.623370016849251*^9}, {3.6233701016458597`*^9, 3.62337011094805*^9}, {
+   3.6233711648538027`*^9, 3.62337116587525*^9}, {3.688366031349457*^9, 
+   3.688366134324223*^9}, {3.688691754164209*^9, 3.6886917564189262`*^9}, {
+   3.688719430974615*^9, 3.688719456075294*^9}, 3.694369904917817*^9, {
+   3.694579528628496*^9, 3.6945795970847178`*^9}, {3.694968808165081*^9, 
+   3.6949688209656143`*^9}, {3.694968898246821*^9, 3.6949689235139503`*^9}, {
+   3.694969183152792*^9, 3.694969610349979*^9}, {3.694969998436729*^9, 
+   3.694970005015292*^9}, {3.694979727135263*^9, 3.694979763848262*^9}},
+ Background->RGBColor[
+  0.87, 0.94, 1],ExpressionUUID->"669bd203-3188-cd47-9fd5-2b734319bdbc"],
+
+Cell[TextData[{
+ "Answer 3.\nC=Q/V\n\nSo by definition, The charge Q on the capacitor stored \
+per unit voltage (V) applied/attached across it is 10\[Mu]C.\n\nHence, V = \
+Q/C\nSo Q1= V1C and Q2 = V2C (Calculations below in the code - just plugged \
+in the values)\n\nHence, by coulomb\[CloseCurlyQuote]s law (since the force \
+outside the spheres are applied as if caused by point charges),\n",
+ StyleBox["Assuming 10cm is the distance between the centres of the spheres",
+  FontVariations->{"Underline"->True}],
+ "\n\nF = kQ1Q2/r^2 = 0.007533 N"
+}], "Subsubsection",
+ CellGroupingRules->{"GroupTogetherGrouping", 10001.},
+ CellChangeTimes->{{3.620837780094871*^9, 3.620837800725563*^9}, {
+   3.62083811174247*^9, 3.620838116693406*^9}, {3.620841033794161*^9, 
+   3.6208410526062813`*^9}, {3.620843087922526*^9, 3.620843109993519*^9}, {
+   3.6209263916491957`*^9, 3.620926416105279*^9}, {3.622065740418627*^9, 
+   3.622065770445798*^9}, {3.622068810881812*^9, 3.622068834987339*^9}, 
+   3.6220699797343197`*^9, 3.6229155612911463`*^9, {3.623369965307362*^9, 
+   3.623370016849251*^9}, {3.6233701016458597`*^9, 3.62337011094805*^9}, {
+   3.6233711648538027`*^9, 3.62337116587525*^9}, {3.688366031349457*^9, 
+   3.688366134324223*^9}, {3.688691754164209*^9, 3.6886917564189262`*^9}, {
+   3.688719430974615*^9, 3.688719475485545*^9}, 3.694968808165382*^9, {
+   3.9484134984375324`*^9, 3.9484136103335304`*^9}, {3.9484137029578247`*^9, 
+   3.948413707214361*^9}, {3.9484137398055744`*^9, 3.9484138789344025`*^9}},
+ Background->RGBColor[
+  0.87, 0.94, 1],ExpressionUUID->"ca4a5e9e-387d-564a-ab83-82d3043e376f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "This", " ", "is", " ", "an", " ", "Input", " ", "cell", " ", "in", " ", 
+    "case", " ", "you", " ", "need"}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Q1", " ", "=", " ", 
+    RowBox[{"9.3", "*", 
+     RowBox[{"10", "^", 
+      RowBox[{"(", 
+       RowBox[{"-", "3"}], ")"}]}], "*", "10", "*", 
+     RowBox[{"10", "^", 
+      RowBox[{"(", 
+       RowBox[{"-", "6"}], ")"}]}]}]}], " ", "\[IndentingNewLine]", 
+   RowBox[{"Q2", " ", "=", " ", 
+    RowBox[{"8.1", "*", 
+     RowBox[{"10", "^", 
+      RowBox[{"(", 
+       RowBox[{"-", "3"}], ")"}]}], "*", "10", "*", 
+     RowBox[{"10", "^", 
+      RowBox[{"(", 
+       RowBox[{"-", "6"}], ")"}]}]}]}], " ", "\[IndentingNewLine]", 
+   RowBox[{"10", "*", 
+    RowBox[{"10", "^", "9"}], " ", "*", " ", "Q1", " ", "*", " ", 
+    RowBox[{"Q2", "/", " ", 
+     RowBox[{"(", 
+      RowBox[{"0.1", "^", "2"}], ")"}]}]}]}]}]], "Input",
+ CellGroupingRules->{"GroupTogetherGrouping", 10001.},
+ CellChangeTimes->{{3.6887150710025053`*^9, 3.68871516367642*^9}, {
+   3.688788383186554*^9, 3.6887884411916113`*^9}, {3.688791382593507*^9, 
+   3.688791579664248*^9}, {3.688791612095237*^9, 3.688791647442322*^9}, {
+   3.688791869349415*^9, 3.688791872101664*^9}, {3.688792117806716*^9, 
+   3.688792174323256*^9}, {3.688792431802599*^9, 3.6887924321932163`*^9}, {
+   3.6887937122035418`*^9, 3.688793723212285*^9}, {3.688870157071949*^9, 
+   3.6888706164579067`*^9}, {3.68887130750359*^9, 3.688871375418387*^9}, 
+   3.6900654965105867`*^9, {3.690119253517949*^9, 3.690119254476774*^9}, {
+   3.6901517334767523`*^9, 3.6901519871197853`*^9}, {3.690152020014276*^9, 
+   3.6901520226190157`*^9}, {3.6901520804582253`*^9, 3.690152082943993*^9}, {
+   3.690152121600914*^9, 3.690152180106141*^9}, {3.6901693629964237`*^9, 
+   3.690169395217452*^9}, 3.69016943904252*^9, {3.690171126648179*^9, 
+   3.6901711541917877`*^9}, {3.6905479600003157`*^9, 3.6905479995404873`*^9}, 
+   3.694369113622551*^9, 3.694968808165679*^9, {3.9484136167961407`*^9, 
+   3.948413661215826*^9}, {3.9484136949233284`*^9, 3.948413724771782*^9}, {
+   3.948413854367071*^9, 3.948413871938717*^9}},
+ Background->GrayLevel[0.85],
+ CellLabel->"In[5]:=",ExpressionUUID->"5e0bd876-0e93-af45-b3ae-fdd3d5e4d853"],
+
+Cell[BoxData["9.300000000000001`*^-8"], "Output",
+ CellGroupingRules->{"GroupTogetherGrouping", 10001.},
+ CellChangeTimes->{3.9484136892734203`*^9, 3.9484137260359097`*^9, 
+  3.9484138730021114`*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"2346750b-83b8-ed48-a416-e5626d7372e9"],
+
+Cell[BoxData["8.1`*^-8"], "Output",
+ CellGroupingRules->{"GroupTogetherGrouping", 10001.},
+ CellChangeTimes->{3.9484136892734203`*^9, 3.9484137260359097`*^9, 
+  3.948413873007244*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"e4554402-1259-9344-ac39-fd0e08a9b08b"],
+
+Cell[BoxData["0.007532999999999999`"], "Output",
+ CellGroupingRules->{"GroupTogetherGrouping", 10001.},
+ CellChangeTimes->{3.9484136892734203`*^9, 3.9484137260359097`*^9, 
+  3.94841387300947*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"c0025121-8400-a94e-9169-8a646f9b166a"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Table X. Copy All Your Final Results.", "Subsection",
+ CellChangeTimes->{{3.620837780094871*^9, 3.620837800725563*^9}, {
+   3.62083811174247*^9, 3.620838116693406*^9}, {3.620841033794161*^9, 
+   3.6208410526062813`*^9}, {3.620843087922526*^9, 3.620843109993519*^9}, {
+   3.6209263916491957`*^9, 3.620926416105279*^9}, {3.622065740418627*^9, 
+   3.622065770445798*^9}, {3.622068810881812*^9, 3.622068834987339*^9}, 
+   3.6220699797343197`*^9, 3.6229155612911463`*^9, {3.623369965307362*^9, 
+   3.623370016849251*^9}, {3.623371160720181*^9, 3.6233711617644653`*^9}, 
+   3.624024869345673*^9, {3.68529520009652*^9, 3.685295219461748*^9}, {
+   3.685377290818783*^9, 3.685377293967451*^9}, {3.6853773242038794`*^9, 
+   3.685377361301807*^9}, {3.685378481892041*^9, 3.685378507191881*^9}, 
+   3.685381614005658*^9, {3.685386152044571*^9, 3.685386158739319*^9}, {
+   3.68540609498953*^9, 3.6854061206593723`*^9}, {3.6887168519094353`*^9, 
+   3.688716959493142*^9}, {3.6887175531399393`*^9, 3.688717574877693*^9}},
+ FontColor->GrayLevel[0],
+ Background->RGBColor[
+  1, 0.925, 0.925],ExpressionUUID->"caa3f808-2627-fb48-a017-739a186c3382"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Grid", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+       "Text", "[", "\"\<Table X. Final Answers, Lab 3 Prerequisite\>\"", 
+        "]"}], ",", "SpanFromLeft"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Q1. F (N)\>\"", ",", 
+       "\"\<Q2. final charge on first sphere, \!\(\*SubscriptBox[\(Q\), \
+\(1\)]\)\>\"", ",", 
+       "\"\<Q2. final charge on second sphere, \!\(\*SubscriptBox[\(Q\), \
+\(2\)]\)\>\"", ",", " ", "\"\<Q3. F (N)\>\""}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<4.5 * \!\(\*SuperscriptBox[\(10\), \(11\)]\)\>\"", ",", 
+       "\"\<Q/2\>\"", ",", " ", "\"\<Q/2\>\"", ",", " ", "\"\<0.007533\>\""}],
+       "}"}]}], "\[IndentingNewLine]", "}"}], ",", 
+   RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.688691088341576*^9, 3.688691123541265*^9}, {
+  3.688691341629904*^9, 3.688691561894689*^9}, {3.688691592077632*^9, 
+  3.688691636845357*^9}, {3.6887193411989117`*^9, 3.688719341921589*^9}, {
+  3.694579651662919*^9, 3.6945797349614983`*^9}, {3.6949700540996733`*^9, 
+  3.694970125928405*^9}, {3.9484139003008823`*^9, 3.948413964930523*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"d8627108-277c-164b-aa8e-401fc2f5a722"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox["\<\"Table X. Final Answers, Lab 3 Prerequisite\"\>", 
+        TextForm]], "InlineText",ExpressionUUID->
+       "f1645eca-9441-b947-9e73-1bc782f9612d"],
+      Text["Table X. Final Answers, Lab 3 Prerequisite"]], "\[SpanFromLeft]", 
+     "\[SpanFromLeft]", "\[SpanFromLeft]"},
+    {"\<\"Q1. F (N)\"\>", "\<\"Q2. final charge on first sphere, \
+\\!\\(\\*SubscriptBox[\\(Q\\), \\(1\\)]\\)\"\>", "\<\"Q2. final charge on \
+second sphere, \\!\\(\\*SubscriptBox[\\(Q\\), \\(2\\)]\\)\"\>", "\<\"Q3. F \
+(N)\"\>"},
+    {"\<\"4.5 * \\!\\(\\*SuperscriptBox[\\(10\\), \\(11\\)]\\)\"\>", "\<\"Q/2\
+\"\>", "\<\"Q/2\"\>", "\<\"0.007533\"\>"}
+   },
+   AutoDelete->False,
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{3.68869156302031*^9, 3.6886916460877867`*^9, 
+  3.688719345776733*^9, 3.694579735836727*^9, 3.694970127182712*^9, 
+  3.9484139676621704`*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"39d661cc-0d30-d348-8f77-2d14cb458085"]
+}, Open  ]],
+
+Cell["\<\
+Rutgers 276 Classical Physics Lab
+\[OpenCurlyDoubleQuote]Electrostatics\[CloseCurlyDoubleQuote]
+Copyright 2017 Roshan Tourani and Girsh Blumberg\
+\>", "Author",
+ CellFrame->{{0, 0}, {0, 0.5}},
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.4737249584528837`*^9, 3.473724963145158*^9}, {
+   3.619037528327351*^9, 3.619037530606106*^9}, {3.619037579218363*^9, 
+   3.619037625019002*^9}, {3.619037674522127*^9, 3.619037676514368*^9}, {
+   3.61903777559944*^9, 3.619037825849731*^9}, {3.619038202649548*^9, 
+   3.619038211101948*^9}, {3.6190382644927883`*^9, 3.619038271012796*^9}, 
+   3.619038509204104*^9, {3.619038548907055*^9, 3.6190385570401583`*^9}, {
+   3.6196370787264233`*^9, 3.619637086289963*^9}, {3.621177799114073*^9, 
+   3.6211778042523108`*^9}, {3.6220665124760847`*^9, 
+   3.6220665255417833`*^9}, {3.6229123748745327`*^9, 
+   3.6229123874978933`*^9}, {3.6233705984416533`*^9, 3.623370610959339*^9}, {
+   3.6870245937282763`*^9, 3.687024668745454*^9}, {3.688366261080297*^9, 
+   3.68836630023212*^9}, {3.694980555761787*^9, 
+   3.694980558935781*^9}},ExpressionUUID->"220323c0-1153-a740-9a71-\
+101d29814d4b"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowToolbars->"EditBar",
+WindowSize->{1141.2, 604.8},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+PrintingCopies->1,
+PrintingPageRange->{Automatic, Automatic},
+PageHeaders->{{
+   Cell[
+    TextData[{
+      Cell[
+       TextData[{
+         CounterBox["Page"]}], "PageNumber"], " ", 
+      Cell[
+      " ", "Header", CellFrame -> {{0.5, 0}, {0, 0}}, CellFrameMargins -> 4], 
+      Cell[
+       TextData[{
+         ValueBox["FileName"]}], "Header"]}], 
+    CellMargins -> {{0, Inherited}, {Inherited, Inherited}}], None, None}, {
+   Cell[
+    TextData[{
+      Cell[
+       TextData[{
+         ValueBox["FileName"]}], "Header"], 
+      Cell[
+      " ", "Header", CellFrame -> {{0, 0.5}, {0, 0}}, CellFrameMargins -> 4], 
+      " ", 
+      Cell[
+       TextData[{
+         CounterBox["Page"]}], "PageNumber"]}], 
+    CellMargins -> {{Inherited, 0}, {Inherited, Inherited}}], None, None}},
+PrintingOptions->{"FacingPages"->False,
+"FirstPageHeader"->True,
+"PaperOrientation"->"Landscape",
+"PaperSize"->{Automatic, Automatic},
+"PostScriptOutputFile"->"/home/roshan/Work/teaching/276_lab_spring_2017/\
+Mathematica_Notebooks/prerequisites/Lab3_Prerequisite__Electrostatics.pdf",
+"PrintingMargins"->{{36, 36}, {36, 36}}},
+PrivateNotebookOptions->{"VersionedStylesheet"->{"Default.nb"[8.] -> False}},
+FrontEndVersion->"14.1 for Microsoft Windows (64-bit) (July 16, 2024)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"9abcca08-3b19-d74c-a9ba-e828a1962ad9"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 549, 8, 96, "Title",ExpressionUUID->"3bb875da-d2e2-5541-b580-ca3ce7adf6e5"],
+Cell[1132, 32, 809, 13, 83, "Subtitle",ExpressionUUID->"5e1e67df-94c2-3840-b753-ea1e1b14b372"],
+Cell[1944, 47, 683, 13, 72, "Subsubtitle",ExpressionUUID->"9cfa3262-9cf4-a742-95c3-559fdfd9f14a"],
+Cell[CellGroupData[{
+Cell[2652, 64, 432, 7, 66, "Section",ExpressionUUID->"421776e9-23fe-de4e-9936-b0c3f8ee0d27"],
+Cell[CellGroupData[{
+Cell[3109, 75, 462, 7, 53, "Subsection",ExpressionUUID->"16b03faa-5bd0-a046-98af-fea7393ba2b0"],
+Cell[3574, 84, 3142, 72, 279, "Text",ExpressionUUID->"381650f8-1292-2a40-bf9f-b51c02abd083"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6753, 161, 475, 7, 53, "Subsection",ExpressionUUID->"7ab4a446-a30b-944d-95dc-18ee20de331e"],
+Cell[7231, 170, 3065, 65, 317, "Text",ExpressionUUID->"b8264923-415e-1143-a91f-e8737bb87ec0"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10345, 241, 513, 8, 66, "Section",ExpressionUUID->"55296861-6963-3a40-ba34-a1ab504cfa4a"],
+Cell[10861, 251, 1052, 17, 109, "Subsubsection",ExpressionUUID->"45b43da9-05ca-9141-8c86-8604a46639c5"],
+Cell[CellGroupData[{
+Cell[11938, 272, 1414, 23, 201, "Subsubsection",ExpressionUUID->"745418b9-20d7-4e4c-8790-ba3a60b5f388"],
+Cell[CellGroupData[{
+Cell[13377, 299, 1630, 29, 63, "Input",ExpressionUUID->"cf276d57-1793-2945-a6c1-883489345b30",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
+Cell[15010, 330, 227, 3, 32, "Output",ExpressionUUID->"46bc2f4c-bdc1-9243-a2e7-3f64d4665abe",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.}]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15274, 338, 1394, 22, 110, "Subsubsection",ExpressionUUID->"04ad4f04-60f7-8146-a303-64af57eea33d",
+ CellGroupingRules->{"GroupTogetherGrouping", 10001.}],
+Cell[16671, 362, 1909, 34, 308, "Subsubsection",ExpressionUUID->"91bf8f64-7856-f746-ac24-23d9dd67b037",
+ CellGroupingRules->{"GroupTogetherGrouping", 10001.}],
+Cell[18583, 398, 1380, 23, 63, "Input",ExpressionUUID->"0db50599-68e3-eb49-93e8-75208a683ae5",
+ CellGroupingRules->{"GroupTogetherGrouping", 10001.}],
+Cell[19966, 423, 2255, 43, 184, "Subsubsection",ExpressionUUID->"669bd203-3188-cd47-9fd5-2b734319bdbc",
+ CellGroupingRules->{"GroupTogetherGrouping", 10001.}],
+Cell[22224, 468, 1606, 24, 333, "Subsubsection",ExpressionUUID->"ca4a5e9e-387d-564a-ab83-82d3043e376f",
+ CellGroupingRules->{"GroupTogetherGrouping", 10001.}],
+Cell[23833, 494, 2283, 46, 101, "Input",ExpressionUUID->"5e0bd876-0e93-af45-b3ae-fdd3d5e4d853",
+ CellGroupingRules->{"GroupTogetherGrouping", 10001.}],
+Cell[26119, 542, 277, 4, 32, "Output",ExpressionUUID->"2346750b-83b8-ed48-a416-e5626d7372e9",
+ CellGroupingRules->{"GroupTogetherGrouping", 10001.}],
+Cell[26399, 548, 261, 4, 32, "Output",ExpressionUUID->"e4554402-1259-9344-ac39-fd0e08a9b08b",
+ CellGroupingRules->{"GroupTogetherGrouping", 10001.}],
+Cell[26663, 554, 273, 4, 32, "Output",ExpressionUUID->"c0025121-8400-a94e-9169-8a646f9b166a",
+ CellGroupingRules->{"GroupTogetherGrouping", 10001.}]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26985, 564, 1136, 16, 69, "Subsection",ExpressionUUID->"caa3f808-2627-fb48-a017-739a186c3382"],
+Cell[CellGroupData[{
+Cell[28146, 584, 1335, 29, 92, "Input",ExpressionUUID->"d8627108-277c-164b-aa8e-401fc2f5a722"],
+Cell[29484, 615, 1144, 23, 76, "Output",ExpressionUUID->"39d661cc-0d30-d348-8f77-2d14cb458085"]
+}, Open  ]],
+Cell[30643, 641, 1129, 20, 90, "Author",ExpressionUUID->"220323c0-1153-a740-9a71-101d29814d4b"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
