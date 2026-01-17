@@ -1,15 +1,15 @@
-# --- Obsidian safe tracking ---
+# --- Obsidian safe tracking (ALL semesters) ---
 
-# Ignore workspace & cache
-.obsidian/workspace*
-.obsidian/cache/
+**/.obsidian/workspace*
+**/.obsidian/cache/
 
-# Ignore all plugin runtime data (MOST IMPORTANT)
-.obsidian/plugins/**/data.json
-.obsidian/plugins/**/logs/
-.obsidian/plugins/**/.cache/
+**/.obsidian/plugins/**/data.json
+**/.obsidian/plugins/**/logs/
+**/.obsidian/plugins/**/.cache/
 
-# Ignore common secret files (just in case)
+**/.obsidian/workspace.json
+**/.obsidian/workspace-mobile.json
+
 .env
 .env.*
 *.key
