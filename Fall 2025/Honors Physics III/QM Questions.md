@@ -1,0 +1,26 @@
+- Schrodinger Equation 
+	- How does the splitting work 
+	- Ylm?
+	- $R, \Phi, \Theta$
+	- Angular Momentum Operator $\vec{r} \times \vec{p}$
+	- Shapes 
+	- Chem vs Physics: $p$ orbitals 
+	- Selection rules ($\Delta l = \pm 1, \Delta m = (0, \pm 1)$)
+	- Energy Splitting and degeneracy with or without magnetic fields 
+		- What levels, what orbitals are degenerate
+	- Aufbau's Principle 
+		- ![[Honors Physics III/attachments/Pasted image 20251119131655.png]]
+- Stern Gerlach Setup 
+- Spin 
+- Spin as additional quantum numbers for Pauli Matrix vs Physical Interpretation of Spin and Physical manifestation of spin
+
+
+---
+
+![[Honors Physics III/attachments/Drawing 25-11-21-12-38-12|100%]]
+
+
+---
+
+
+![[Honors Physics III/attachments/Drawing 25-11-21-12-54-27|100%]]
