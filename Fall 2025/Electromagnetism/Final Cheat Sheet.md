@@ -1,0 +1,1 @@
+![[Electromagnetism/attachments/Drawing 25-12-18-04-08-06]]
