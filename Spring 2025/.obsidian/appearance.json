@@ -1,0 +1,14 @@
+{
+  "theme": "system",
+  "monospaceFontFamily": "JuliaMono MediumItalic",
+  "baseFontSizeAction": true,
+  "enabledCssSnippets": [
+    "snippet",
+    "graphviewcolors",
+    "extended-colorschemes"
+  ],
+  "cssTheme": "AnuPpuccin",
+  "baseFontSize": 23,
+  "textFontFamily": "Avenir",
+  "nativeMenus": false
+}
